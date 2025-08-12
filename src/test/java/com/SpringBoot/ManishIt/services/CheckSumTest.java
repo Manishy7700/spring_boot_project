@@ -4,16 +4,19 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
+
+import org.mockito.Mock;
+
 
 
 class CheckSumTest {
 	
-	@Autowired
-	private CheckSum s;
+	
 
 	@Test
 	void test() {
+		
+		CheckSum s= new CheckSum();
 		int a=3;
 		int b=4;
 		
